@@ -26,7 +26,7 @@ def file_group_rename(source_ext: str, destin_ext: str,
             if old_ext == source_ext:
                 number += 1
                 number_str = f'{number:0{digits_amount}}'
-                new_name = f'{old_name[scope_[0]+1:scope_[1]+1]}{destin_filename}{number_str}.{destin_ext}'
+                new_name = f'{old_name[scope_[0]-1:scope_[1]-1]}{destin_filename}{number_str}.{destin_ext}'
                 Path(obj.name).rename(new_name)
 
 
