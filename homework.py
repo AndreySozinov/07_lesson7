@@ -16,7 +16,7 @@ __all__ = ['file_group_rename']
 def file_group_rename(source_ext: str, destin_ext: str,
                       destin_filename: str = '', digits_amount: int = 4, scope_=None) -> None:
     if scope_ is None:
-        scope_ = [0, 2]
+        scope_ = [1, 3]
     number = 0
 
     p = Path(Path().cwd())
